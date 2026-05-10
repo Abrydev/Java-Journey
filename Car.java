@@ -1,24 +1,15 @@
-package OOP;
+package ArrayObjects;
 
 public class Car {
-    String make = "Ford";
-    String model = "Mustang";
-    int year = 2025;
-    double price = 58000.99;
-    boolean isOn = false;
+    String color;
+    String model;
 
-    void start(){
-        isOn = true;
-        System.out.println("You START the engine");
+    Car(String model, String color){
+        this.model = model;
+        this.color = color;
     }
-    void stop(){
-        isOn = false;
-        System.out.println("You STOP the engine");
-    }
+
     void drive(){
-        System.out.println("you drive the " + model);
-    }
-    void brake(){
-        System.out.println("you brake the " + model);
+        System.out.println("You drive the " + this.color + " "  + this.model);
     }
 }
